@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap");
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+:root {
+  --primary-green: #416422;
+  --medium-green: #97ce73;
+	--light-green: #a8c093;
+	--opaque-green: rgba(65, 100, 34, 0.3);
+	--medium-opaque-green: rgba(65, 100, 34, 0.7);
+	--secondary-opaque-green: rgba(65, 100, 34, 0.8);
+	--select-green: #97CE73;
+
+}
+
+.reset * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  text-decoration: none;
+}
+
+.html,
+.body {
+  font-size: 87.5%;
+  font-family: "Montserrat", sans-serif;
+  /* font-weight: 500; */
+}
+
+.body {
+	overflow-x: hidden;
+}

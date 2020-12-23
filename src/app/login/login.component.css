@@ -1,0 +1,115 @@
+.container {
+  margin: 0px auto;
+  border: 2px solid var(--light-green);
+  box-sizing: border-box;
+  padding-left: 6rem;
+  border-radius: 7px;
+  width: 80%;
+  margin-top: 7rem;
+}
+
+.loginHeader {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 3rem;
+}
+
+.loginPara {
+  padding: 1.5 0rem 1.3rem 0rem;
+  font-size: 1rem;
+}
+
+.loginForm {
+  padding: 3rem 0rem;
+  width: 85%;
+}
+
+.loginForm input {
+  border: 2px solid var(--light-green) !important;
+  border-radius: 5px;
+  padding: 1rem 0rem 1rem 1.2rem;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.loginForm::placeholder {
+  color: var(--primary-green) !important;
+}
+
+.loginFormBtn {
+  color: #fff;
+  background-color: var(--primary-green);
+  margin-top: 20px;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: larger;
+}
+
+.loginLink {
+  color: var(--primary-green);
+}
+
+.loginLink:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.backToHomeText {
+  font-size: 1rem;
+  text-align: left;
+  margin-left: 15rem;
+  text-decoration: none;
+  color: var(--primary-green);
+}
+
+.backToHomeText:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.backToHome {
+  margin: 1.5rem 0 7rem 0;
+}
+.fa-angle-left {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.loginCheck {
+  margin-top: 1.7rem;
+}
+
+.form-check-inline {
+  justify-content: space-between;
+  display: flex;
+}
+
+@media screen and (max-width: 640px) {
+  .loginTopHeader,
+  .backToHomeText {
+    margin-left: 9rem;
+  }
+  .container {
+    padding-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .form-check-inline {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .form-check-label {
+    padding-bottom: 0.5rem;
+  }
+  .forgotPass {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .form-check-inline,
+  .form-check-input {
+    font-size: 0.8rem;
+  }
+}

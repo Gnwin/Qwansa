@@ -1,0 +1,96 @@
+<div class="wrapper-container">
+  <h2 class="businessTopHeader">Want to edit your Business details?</h2>
+
+  <div class="container content">
+    <h2 class="businessHeader">Edit Business Details</h2>
+    <p class="businessPara">* Required</p>
+
+    <form action="" class="businessForm">
+
+      <div class="form-group">
+        <label for="businessName">*</label>
+        <input type="text" id="businessName" class="form-control border d-block  " placeholder="Business Name">
+      </div>
+
+      <label for="businessInline">*</label>
+      <div class="form-group businessInline2">
+
+        <select class="form-control   d-block w-100 border" name="country" id="country" placeholder="Country">
+          <option value="" selected disabled>Country</option>
+          <option value="" >Nigeria</option>
+          <option value="">Camerooun</option>
+          <option value="">Ghana</option>
+        </select>
+        
+        <select class="form-control   d-block w-100 border"name="state" id="state" placeholder="State">
+          <option value="">Yola</option>
+          <option value="">Taraba</option>
+          <option value="">Gombe</option>
+          <option value="">Jos</option>
+        </select>
+
+        <select class="form-control   first-name d-block w-100 border" name="LGA" id="lga" placeholder="LGA">
+          <option value="">Yola North</option>
+          <option value="">Yola South</option>
+        </select>
+        
+			</div>
+
+      <div class="form-group">
+        <label for="address">*</label>
+        <input type="text" class="form-control border d-block  " id="address" placeholder="Address">
+      </div>
+
+      <div class="form-group">
+        <label for="street">*</label>
+        <input type="address" class="form-control border d-block  " id="street" placeholder="Street">
+      </div>
+
+      <div class="form-group">
+        <label for="phoneNumber">*</label>
+        <input type="text" class="form-control border d-block  " id="phoneNumber" placeholder="phone Number">
+      </div>
+      
+      
+      <div class="form-group">
+        <label for="gender">*</label>
+        <select class="form-control d-block border" id="cac" name="cac">
+          <option value="0" selected disabled>Is your business registered with CAC?:</option>
+          <option value="1">Yes</option>
+          <option value="2">No</option>
+        </select>
+                
+      </div>
+
+      <div class="form-group">
+        <label for="cacNumber">*</label>
+        <input type="text" class="form-control border d-block  " id="cacNumber" placeholder="If yes, kindly fill in the CAC Number here.">
+      </div>
+
+      <label class="w-100" for="">*
+        <div class="form-group custom-file">
+            <input type="file" class="custom-file-input form-control" id="customFile" onchange="this.nextElementSibling.innerText = this.files[0].name" accept=".png, .jpg, .jpeg" required>
+            <label class="custom-file-label form-control border d-block" for="customFile">Company Logo</label>     
+        </div>
+      </label>
+
+
+      <div class="form-group">
+				<label for="textareaCacNumber" class="textareaLabel">*</label>
+				<textarea name="textareaCacNumber" id="textareaCacNumber" class="contact-us-input form-control border textareaCacNumber" cols="95" rows="7" placeholder="Fill in company description here."></textarea>
+		</div>
+
+      <div class="form-check-inline">
+        <button type="submit" class="businessFormBtn">Save</button>
+      </div>
+
+    </form>
+
+  </div>
+
+  <div class="backToHome">
+    <a href="" class="backToHomeText" routerLink="/home"><i class="fa fa-angle-left" aria-hidden="true"></i>   Back to Home Page</a>
+  </div>
+
+</div>
+  

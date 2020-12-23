@@ -1,0 +1,154 @@
+/* Navbar */
+
+.main-nearby {
+  background-color: var(--primary-green);
+}
+
+.nearby-navbar * {
+	/* background-color: var(--primary-green); */
+	font-size: 11px;
+}
+
+.pad {
+  max-width: 96%;
+}
+
+.nearby-logo {
+  width: 5.7143rem;
+}
+
+.navbar-list {
+  /* background-color: none; */
+}
+
+.navbar-ul {
+  /* background-color: var(--light-green); */
+}
+
+.hausa {
+  position: relative;
+}
+
+.lang-dropdown {
+  background-color: #fff;
+  width: 12px;
+  margin-left: 7px;
+  /* position: relative; */
+}
+
+.dropdown-content1 {
+  position: absolute;
+  width: 10rem;
+  left: -7px;
+  top: 30px;
+  background-color: var(--light-green);
+  color: white;
+  z-index: 6;
+}
+
+.dropdown-content2 {
+  background-color: var(--primary-green);
+  color: #fff;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  text-decoration: none;
+}
+
+.dropdown-content2:hover {
+  background-color: var(--medium-green);
+  color: green;
+}
+
+.hamburger {
+  position: relative;
+}
+
+.fa-bars {
+  font-size: 1.3rem;
+}
+
+.dropdown-content {
+  position: absolute;
+  width: 10rem;
+  left: -120px;
+  top: 30px;
+  z-index: 3;
+  background-color: var(--light-green);
+  opacity: 1;
+  text-align: left;
+}
+
+.fa-bars {
+  color: white;
+}
+
+.show {
+  display: block;
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--primary-green);
+}
+
+.footer * {
+  color: #fff;
+  font-size: 0.8571rem;
+}
+
+.footer-section {
+  padding-top: 2rem;
+}
+
+.nearby-footer-logo {
+  width: 8rem;
+}
+
+/* .fa-facebook,
+.fa-twitter,
+.fa-instagram,
+.fa-linkedin,
+.fa-youtube-square {
+	font-size: 30px;
+} */
+
+.link-icon-img {
+  width: 24px;
+}
+
+.footer-sub-heading {
+  font-size: 1.2rem;
+}
+
+.underline {
+  border-top: 1px solid #fff;
+}
+
+.google {
+  margin-right: 5px;
+}
+
+.community-search {
+  padding: 10px;
+  border-radius: 7px 0px 0px 7px;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.footer .button-search {
+  color: var(--primary-green);
+  background-color: #fff;
+  border-radius: 0px 7px 7px 0px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.footer .fa-search {
+  color: var(--primary-green);
+  padding: 0px 10px;
+}
+
+.policy {
+  background-color: var(--medium-green);
+}

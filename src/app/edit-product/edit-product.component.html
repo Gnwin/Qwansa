@@ -1,0 +1,77 @@
+<div class="wrapper-container">
+  <h2 class="editProductTopHeader">Want to edit your Product details?</h2>
+
+  <div class="container content">
+    <h2 class="editProductHeader">Edit Product Details</h2>
+    <p class="editProductPara">* Required</p>
+
+    <form action="" class="editProductForm">
+
+      <div class="form-group">
+        <label for="gender">*</label>
+        <select class="form-control d-block border" id="cac" name="cac">
+          <option value="0" selected disabled>Product Category</option>
+          <option value="1">Agriculture</option>
+          <option value="2">Technology</option>
+        </select>
+                
+      </div>
+    
+
+      <label for="editProductInline">*</label>
+      <div class="form-group editProductInline2">
+
+        <select class="form-control   d-block w-100 border" name="country" id="country" placeholder="Product Name">
+          <option value="" selected>Rice</option>
+          <option value="">Beans</option>
+          <option value="">Yam</option>
+        </select>
+        
+        <select class="form-control   d-block w-100 border"name="state" id="state" placeholder="Current Capacity">
+          <option value="">10 bags</option>
+          <option value="">30 bags</option>
+          <option value="">50 bags</option>
+          <option value="">100 bags</option>
+        </select>
+        
+			</div>
+
+        <div class="form-group custom-file">
+          <button type="file" class="addImages"> + Add image(s)</button>
+          <input id="actual-upload" type="file" />
+          <!-- <input type='file' class="d-block w-50 input images"/> -->
+          <!-- <img id="customFile" src="http://placehold.it/100" alt="Upload more images" accept=".png, .jpg, .jpeg" required class="p-3"/> -->
+          <!-- <img id="customFile" src="http://placehold.it/100" alt="Upload more images" accept=".png, .jpg, .jpeg" required class=""/> -->
+          <!-- <input type="file" class="custom-file-input form-control" id="customFile" onchange="this.nextElementSibling.innerText = this.files[0].name" accept=".png, .jpg, .jpeg" required>
+          <label class="custom-file-label form-control border d-block" for="customFile">Product Image</label> -->
+
+        </div>
+
+      <!-- <script>
+
+        function readURL(input) {
+          if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+              document.querySelector("#customFile").attr("src", e.target.result);
+            };
+          }
+        }
+
+      </script> -->
+
+      <div class="form-check-inline">
+        <button type="submit" class="editProductFormBtn">Save</button>
+      </div>
+
+    </form>
+
+  </div>
+
+  <div class="backToHome">
+    <a href="" class="backToHomeText" routerLink="/home"><i class="fa fa-angle-left" aria-hidden="true"></i>   Back to Home Page</a>
+  </div>
+
+</div>
+  

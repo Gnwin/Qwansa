@@ -1,0 +1,166 @@
+.updateProfileTopHeader {
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.container {
+  margin: 5rem auto 1rem auto;
+  border: 2px solid var(--light-green);
+  box-sizing: border-box;
+  padding-left: 7rem;
+  border-radius: 7px;
+}
+.content {
+  width: 75%;
+}
+
+.updateProfileHeader {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 3rem;
+}
+
+.updateProfilePara {
+  padding: 1.5 0rem 1.3rem 0rem;
+  font-size: 1rem;
+}
+
+.updateProfileForm {
+  padding: 3rem 0rem;
+  width: 85%;
+}
+
+.updateProfileForm input,
+select {
+  border: 2px solid var(--light-green) !important;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.updateProfileForm::placeholder {
+  color: var(--primary-green) !important;
+}
+
+.updateProfileupInline2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.8rem;
+}
+
+.updateProfileFormBtn {
+  color: #fff;
+  background-color: var(--primary-green);
+  margin-top: 20px;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: larger;
+}
+
+.termsLink {
+  color: red;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.termsLink:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.backToHomeText {
+  font-size: 1rem;
+  text-align: left;
+  margin-left: 15rem;
+  text-decoration: none;
+  color: var(--primary-green);
+}
+
+.backToHomeText:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.backToHome {
+  margin: 2rem 0 10rem 0;
+}
+.fa-angle-left {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.custom-file-input ~ .custom-file-label::after {
+  content: "Choose Image";
+  background-color: var(--primary-green);
+  color: #fff;
+  font-weight: 400;
+}
+
+.custom-file-label {
+  font-size: 1.1rem;
+  border: 2px solid var(--light-green) !important;
+  padding: 10px 15px;
+  margin-bottom: 50px;
+}
+
+.custom-file-input[type="file"] {
+  height: 2rem !important;
+}
+
+.custom-file-input input {
+  border-radius: 5px;
+}
+
+.state,
+.lga {
+  display: none !important;
+}
+
+.form-check {
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 568px) {
+  .updateProfileTopHeader {
+    font-size: 1.5rem;
+  }
+  .form-check-inline {
+    flex-direction: column;
+    font-size: 0.7rem;
+  }
+  .form-check-input {
+    margin-bottom: 0.2rem !important;
+  }
+  .backToHomeText {
+    margin-left: 5rem !important;
+  }
+  .updateProfileForm input,
+  select {
+    font-size: 1rem;
+    padding-left: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .container {
+    padding-left: 2.5rem;
+  }
+  .updateProfileTopHeader {
+    font-size: 2rem;
+  }
+  .state,
+  .lga {
+    display: block !important;
+  }
+  .updateProfileupInline2 {
+    grid: unset;
+    gap: 0rem;
+  }
+
+  .backToHomeText {
+    margin-left: 8.5rem;
+  }
+}

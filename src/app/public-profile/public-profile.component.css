@@ -1,0 +1,69 @@
+.containerForm {
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+}
+
+.publicProfile-form {
+  border: 2px solid var(--medium-green);
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  font-size: 1rem;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+.publicProfile-btn {
+  font-size: 1rem;
+  background-color: var(--primary-green);
+  color: #fff;
+  border-radius: 7px;
+}
+
+.publicProfileTitle {
+  margin: 4rem 0rem;
+}
+
+hr {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #eeeeee;
+  border-style: solid none;
+  border-width: 1px 0;
+  margin: 1rem 0;
+  border-color: var(--medium-green);
+}
+
+.bizTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.bizDetails {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.business-details-primary {
+  padding-left: 4rem;
+}
+
+.business-details-primary > * {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .business-details-primary {
+    padding: 4rem 0 0 0;
+  }
+  
+}

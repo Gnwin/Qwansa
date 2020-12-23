@@ -1,0 +1,125 @@
+.businessTopHeader {
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.container {
+  margin: 5rem auto 1rem auto;
+  border: 2px solid var(--light-green);
+  box-sizing: border-box;
+  padding-left: 5rem;
+  border-radius: 7px;
+}
+.content {
+  width: 80%;
+}
+
+.businessHeader {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 3rem;
+}
+
+.businessPara {
+  padding: 1.5 0rem 1.3rem 0rem;
+  font-size: 1rem;
+}
+
+.businessForm {
+  padding: 3rem 0rem;
+  width: 85%;
+}
+
+.businessForm input,
+select,
+.textareaCacNumber {
+  border: 2px solid var(--light-green) !important;
+  border-radius: 5px;
+  padding: 0.3rem 0rem 0.3rem 1.2rem;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.textareaCacNumber label {
+  margin-top: 2rem;
+}
+
+.businessForm::placeholder {
+  color: var(--primary-green) !important;
+  font-size: 1.5rem;
+}
+
+.businessInline2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.8rem;
+}
+
+.businessInline1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.8rem;
+}
+
+.businessFormBtn {
+  color: #fff;
+  background-color: var(--primary-green);
+  margin-top: 20px;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: larger;
+}
+
+.custom-file-input ~ .custom-file-label::after {
+  content: "Choose Image";
+  background-color: var(--primary-green);
+  color: #fff;
+  font-weight: 400;
+}
+
+.custom-file-label {
+  font-size: 1.1rem;
+  border: 2px solid var(--light-green) !important;
+  padding: 10px 15px;
+  margin-bottom: 50px;
+}
+
+.custom-file-input[type="file"] {
+  height: 2rem !important;
+}
+
+.custom-file-input input {
+  border-radius: 7px;
+}
+
+.form-check {
+  padding-top: 30px;
+}
+
+.textareaLabel {
+  margin-top: 2rem;
+}
+
+.fa-angle-left {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.backToHomeText {
+  font-size: 1rem;
+  text-align: left;
+  margin-left: 19rem;
+  text-decoration: none;
+  color: var(--primary-green);
+}
+
+.backToHomeText:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.backToHome {
+  margin: 2rem 0 10rem 0;
+}

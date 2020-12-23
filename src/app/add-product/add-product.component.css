@@ -1,0 +1,151 @@
+.addProductTopHeader {
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.container {
+  margin: 5rem auto 1rem auto;
+  border: 2px solid var(--light-green);
+  box-sizing: border-box;
+  padding-left: 7rem;
+  border-radius: 7px;
+}
+.content {
+  width: 85%;
+}
+
+.addProductHeader {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 3rem;
+}
+
+.addProductPara {
+  padding: 1.5 0rem 1.3rem 0rem;
+  font-size: 1rem;
+}
+
+.addProductForm {
+  padding: 3rem 0rem;
+  width: 85%;
+}
+
+.addProductForm input,
+select {
+  border: 2px solid var(--light-green) !important;
+  border-radius: 5px;
+  padding: 0.3rem 0rem 0.3rem 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.addProductForm::placeholder {
+  color: var(--primary-green) !important;
+  font-size: 1.5rem;
+}
+
+.addProductInline2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.8rem;
+}
+
+.addProductFormBtn {
+  color: #fff;
+  background-color: var(--primary-green);
+  margin-top: 20px;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: larger;
+}
+
+.custom-file-input ~ .custom-file-label::after {
+  content: "Choose Image";
+  background-color: var(--primary-green);
+  color: #fff;
+  font-weight: 400;
+}
+
+.custom-file-label {
+  font-size: 1.1rem;
+  border: 2px solid var(--light-green) !important;
+  padding: 10px 15px;
+  margin-bottom: 50px;
+}
+
+#customFile[type="file"] {
+  padding: 10px;
+  background: #b80f0f;
+}
+
+#customFile img {
+  max-width: 100px;
+  padding: 0px;
+}
+
+.addImages {
+  background-color: var(--primary-green);
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  border: none;
+}
+
+#actual-upload {
+  display: none;
+}
+
+.fa-angle-left {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.backToHomeText {
+  font-size: 1rem;
+  text-align: left;
+  margin-left: 19rem;
+  text-decoration: none;
+  color: var(--primary-green);
+}
+
+.backToHomeText:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.backToHome {
+  margin: 2rem 0 10rem 0;
+}
+
+.currentCapacity {
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    padding-left: 2.5rem;
+  }
+  .addProductInline2 {
+    grid: unset;
+    gap: 0rem;
+  }
+  .currentCapacity {
+    display: block;
+  }
+
+  .backToHomeText {
+    margin-left: 2.3rem !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    padding-left: 2.5rem;
+  }
+
+  .backToHomeText {
+    margin-left: 6rem;
+  }
+}

@@ -1,0 +1,139 @@
+.wrapper-container {
+  width: 80%;
+  margin: auto;
+}
+
+.completeSignTopHeader {
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.container {
+  margin: 5rem auto 10rem auto;
+  border: 2px solid var(--light-green);
+  box-sizing: border-box;
+  padding-left: 7rem;
+  border-radius: 7px;
+}
+
+.completeSignHeader {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 3rem;
+}
+
+.completeSignPara {
+  font-size: 1rem;
+}
+
+.completeSignForm {
+  padding: 3rem 0rem;
+  width: 85%;
+}
+
+.completeSignForm input,
+select {
+  border: 2px solid var(--light-green) !important;
+  border-radius: 5px;
+  padding: 0.3rem 0rem 0.3rem 1.2rem;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.completeSignForm::placeholder {
+  color: var(--primary-green) !important;
+}
+
+.completeSignupInline {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 5rem;
+  grid-gap: 0.8rem;
+}
+
+.completeSignupInline2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.8rem;
+}
+
+.completeSignFormBtn {
+  color: #fff;
+  background-color: var(--primary-green);
+  margin-top: 20px;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: larger;
+}
+
+.completeCheck {
+  margin-top: 1.7rem;
+}
+
+.termsLink {
+  color: red;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.termsLink:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.dob,
+.state,
+.lga {
+  display: none;
+}
+
+@media screen and (max-width: 589px) {
+  .dob,
+  .state,
+  .lga {
+    display: block;
+  }
+  .completeSignHeader {
+    font-size: 1.5rem;
+  }
+  .form-check-inline {
+    flex-direction: column;
+  }
+  .completecheck {
+    margin-bottom: 0rem;
+  }
+  #Check2 {
+    margin-bottom: 0rem !important;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .completeSignTopHeader {
+    font-size: 2rem;
+  }
+  .container {
+    margin-bottom: 4rem;
+  }
+
+  .completeSignupInline,
+  .completeSignupInline2 {
+    display: unset;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .container {
+    padding-left: 3rem;
+  }
+  .completeSignForm {
+    font-size: 1rem;
+  }
+
+  .completeSignPara {
+    padding: 1rem 0rem 1.5rem 0rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}

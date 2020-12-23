@@ -1,0 +1,251 @@
+/* Main */
+
+.pad {
+  max-width: 96%;
+}
+
+.connect-img {
+  display: none;
+}
+
+.connect-local {
+  padding: 0 1.3rem;
+}
+
+.connect-local-form {
+  border: 2px solid var(--medium-green);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.connect-local-btn {
+  font-size: 1rem;
+  background-color: var(--primary-green);
+  color: #fff;
+  border-radius: 7px;
+}
+
+.connect-local-heading {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+  padding-top: 2%;
+}
+
+.connect-local-text {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.select-country {
+  font-size: 1rem;
+  border-right: 2px solid var(--medium-green);
+}
+
+.about-us-heading {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.about-us-text {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.readmore {
+  background-color: var(--primary-green);
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 1rem;
+}
+
+/* form in footer */
+
+.contact-us-section {
+  border-bottom: 1px solid #fff;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: var(--primary-green);
+  color: #fff;
+}
+
+.contact-us-input {
+  background: transparent;
+  border-radius: 5px;
+}
+
+.contact-us-input::placeholder {
+  color: #ffffff !important;
+}
+
+.contact-heading {
+  font-size: 1.3rem;
+}
+
+.content {
+  width: 58%;
+}
+
+.contact-us-inline {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.8rem;
+}
+
+.contact-us-submit {
+  color: var(--primary-green);
+  margin-top: 20px;
+  padding: 15px 25px;
+  border-radius: 7px;
+  font-size: larger;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 396px) {
+  .img-connect {
+    position: relative;
+  }
+
+  .connect-img {
+    display: block;
+  }
+
+  .connect .connect-local {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .connect-local {
+    padding: 0 2.3rem;
+  }
+
+  .connect-local-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding-top: 8%;
+  }
+
+  .connect-local-text {
+    margin-bottom: 1rem;
+  }
+
+  .select-country {
+    font-size: 1rem;
+  }
+
+  .about-us-heading {
+    font-size: 2.3rem;
+  }
+
+  .about-us-text {
+    font-size: 1.5rem;
+    line-height: 1.7;
+  }
+
+  .readmore {
+    margin-top: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .connect-local {
+    padding: 0 2.3rem;
+  }
+
+  .connect-local-heading {
+    font-size: 3rem;
+    margin-bottom: 1.2rem;
+    padding-top: 9%;
+  }
+
+  .connect-local-text {
+    margin-bottom: 1.2rem;
+    width: 50%;
+  }
+
+  .connect-local-form {
+    width: 50%;
+  }
+
+  .select-country {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .connect-local {
+    padding-left: 2.3rem;
+  }
+
+  .connect-local-heading {
+    margin-bottom: 1.5rem;
+    padding-top: 15%;
+  }
+
+  .connect-local-text {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    width: 50%;
+  }
+
+  .connect-local-form {
+    width: 50%;
+  }
+
+  .select-country {
+    font-size: 1.3rem;
+  }
+
+  .connect-local-input[placeholder="Type in here"] {
+    font-size: 1.3rem;
+  }
+
+  .connect-local-btn {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .connect-local {
+    padding-left: 3rem;
+  }
+
+  .connect-local-heading {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .connect-local-text {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    width: 50%;
+  }
+
+  .connect-local-form {
+    width: 50%;
+  }
+
+  .select-country {
+    font-size: 1.3rem;
+  }
+
+  .connect-local-input[placeholder="Type in here"] {
+    font-size: 1.3rem;
+  }
+
+  .connect-local-btn {
+    font-size: 1.3rem;
+  }
+}

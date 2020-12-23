@@ -1,0 +1,97 @@
+<div class="wrapper-container">
+  <h2 class="completeSignTopHeader">Complete your registration</h2>
+
+  <div class="container content">
+    <h2 class="completeSignHeader">Sign up for free</h2>
+    <p class="completeSignPara">* Required</p>
+
+    <form action="" class="completeSignForm">
+
+      <div class="form-group">
+        <label for="firstName">*</label>
+        <input type="text" id="firstName" class="form-control border d-block  " placeholder="First Name">
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">*</label>
+        <input type="text" class="form-control border d-block  " id="lastName" placeholder="Last Name">
+      </div>
+      
+      <label for="gender">*</label>
+      <div class="form-group completeSignupInline">
+        <select class="form-control d-block w-100 border selectOption" id="gender" name="gender">
+          <option value="" selected disabled>Gender</option>
+          <option value="">Male</option>
+          <option value="">Female</option>
+          <option value="">Transgender</option>
+          <option value="">Prefer not to say</option>
+        </select>
+        
+        <label for="dob" class="dob">*</label>
+        <input type="date" name="yearOfBirth" id="dob" placeholder="Year Of Birth" class="form-control   d-block w-100 border">
+        
+      </div>
+      
+      <label for="completeSignupInline">*</label>
+      <div class="form-group completeSignupInline2">
+
+        <select class="form-control   d-block w-100 border" name="country" id="country" placeholder="Country">
+          <option value="" selected disabled>Country</option>
+          <option value="">Nigeria</option>
+          <option value="">Camerooun</option>
+          <option value="">Ghana</option>
+        </select>
+        
+        <label for="state" class="state">*</label>
+        <select class="form-control   d-block w-100 border"name="state" id="state" placeholder="State">
+          <option value="" selected disabled>State</option>
+          <option value="">Yola</option>
+          <option value="">Taraba</option>
+          <option value="">Gombe</option>
+          <option value="">Jos</option>
+        </select>
+
+        <label for="lga" class="lga">*</label>
+        <select class="form-control   first-name d-block w-100 border" name="LGA" id="lga" placeholder="LGA">
+          <option value="" selected disabled>LGA</option>
+          <option value="">Yola North</option>
+          <option value="">Yola South</option>
+        </select>
+        
+			</div>
+
+      <div class="form-group">
+        <label for="street">*</label>
+        <input type="address" class="form-control border d-block  " id="street" placeholder="Street">
+      </div>
+
+      <div class="form-group">
+        <label for="createPassword">*</label>
+        <input type="text" id="createPassword" class="form-control border d-block  " placeholder="Create Password">
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">*</label>
+        <input type="text" id="confirmPassword" class="form-control border d-block  " placeholder="confirm Password">
+      </div>
+
+      <div class="form-check">
+        <div class="form-check-inline">
+          <span class="completeCheck">
+            <input type="checkbox" class="form-check-input" id="Check2">
+            <label class="form-check-label" for="Check1">I agree to the following</label>
+          </span>
+          <a href="http://" target="_blank" rel="noopener noreferrer" class="termsLink regHere" routerLink="/sign-up">  Terms and conditions</a>
+        </div>
+      </div>
+
+      <div class="form-check-inline">
+        <button type="submit" class="completeSignFormBtn" routerLink="/profile-page">Register</button>
+      </div>
+
+    </form>
+
+  </div>
+
+</div>
+  

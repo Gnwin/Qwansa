@@ -1,0 +1,156 @@
+.containerForm {
+  margin: 5rem auto 0;
+  width: 50%;
+  margin-top: 5rem;
+  /* margin-bottom: 5rem; */
+}
+
+
+.publicProfile-form {
+  border: 2px solid var(--medium-green);
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  font-size: 1rem;
+}
+
+hr {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #eeeeee;
+  border-style: solid none;
+  border-width: 1px 0;
+  margin: 1rem 0;
+  border-color: var(--medium-green);
+}
+
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+.publicProfile-btn {
+  font-size: 1rem;
+  background-color: var(--primary-green);
+  color: #fff;
+  border-radius: 7px;
+}
+
+.publicProfileTitle {
+	max-width: 1400px;
+	width: 94%;
+	margin: 4rem auto;
+}
+
+.bizTitle {
+  font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.search-result {
+	margin-top: 5rem;
+	display: grid;
+	gap: 20px;
+}
+
+.sidenav {
+	position: sticky;
+	position: -webkit-sticky; /* Safari */
+	box-shadow: 5px 3px 25px rgba(0, 0, 0, 0.1);
+	align-self: flex-start;
+}
+
+.filter-title {
+	font-size: 1.5rem;
+}
+
+.form-row {
+	display: grid;
+	gap: 20px;
+}
+
+.form-title {
+	font-size: 1.2rem;
+	color: var(--primary-green);
+}
+
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.card {
+	box-shadow: 5px 3px 25px rgba(0, 0, 0, 0.1);
+}
+
+.search-view {
+	display: grid;
+	gap: 20px;
+}
+
+.form-search {
+	border: 1.5px solid var(--primary-green);
+	width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+	.form-row {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.search-view {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.form-row {
+		display: unset;
+	}
+
+	.search-result {
+		grid-template-columns: 1fr 4fr;
+	}
+
+	.search-view {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.form-search {
+		display: block;
+	}
+	
+}
+
+@media screen and (min-width: 992px) {
+
+	.search-result {
+		grid-template-columns: 1fr 5fr;
+	}
+
+	.search-view {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+
+@media screen and (min-height: 200vh) {
+	.sidenav {
+		/* height: 100%; */
+		/* width: 250px; */
+		/* position: fixed; */
+		/* z-index: 1; */
+		/* top: unset; */
+		/* margin-left: 20px; */
+		/* left: 0; */
+		/* overflow-x: hidden; */
+		/* padding-top: 20px; */
+		/* position: static; */
+		/* bottom: 0; */
+	}
+	
+}

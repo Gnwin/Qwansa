@@ -1,0 +1,123 @@
+<!-- navbar -->
+
+<div class="main-nearby">
+	<div class="nearby-navbar d-flex justify-content-between align-items-center pad mx-auto py-1 px-3">
+		<img src="././assets/logos/Logo-2.png" alt="LOGO" srcset="" class="nearby-logo d-none d-md-block">
+		<nav class="navbar-list d-flex align-items-center collapse">
+			<ul class="navbar-ul list-unstyled d-none d-md-block">
+				<li class="navbar-li d-inline-block ml-3 home"><a href="#" class="navbar-link text-white" routerLink="/''">Home</a></li>
+				<li class="navbar-li d-inline-block ml-3 about"><a href="#" class="navbar-link text-white" routerLink="/">About</a></li>
+				<li class="navbar-li d-inline-block ml-3 knowledge-base"><a href="#" class="navbar-link text-white" routerLink="/">Knowledge Base</a></li>
+				<li class="navbar-li d-inline-block ml-3 forum"><a href="#" class="navbar-link text-white" routerLink="/">Forum</a></li>
+				<li class="navbar-li d-inline-block ml-3 e-farm"><a href="#" class="navbar-link text-white" routerLink="/">E-farm</a></li>
+				<li class="navbar-li d-inline-block ml-3 contact"><a href="#" class="navbar-link text-white" routerLink="/">Contact</a></li>
+				<li class="navbar-li d-inline-block ml-3 hausa"><a class="navbar-link text-white" (click) = 'toggleLang()'>Hausa<img src="././assets/images/caret-down.png" class="lang-dropdown rounded"></a>
+					<div class="dropdown-content1" *ngIf = 'showLang'>
+						<a class="d-block dropdown-content2 py-2" href="#">English</a>
+						<a class="d-block dropdown-content2 py-2" href="#">Hausa</a>
+					</div>
+				</li>
+			</ul>
+			<button type="submit" class="login px-2 py-1 ml-3 rounded" routerLink="/login">Login</button>
+			<button type="submit" class="add-my-business ml-3 px-2 py-1 rounded" routerLink="/sign-up">Add my Business</button>
+		</nav>
+	
+		<div class="hamburger d-md-none ml-3 ml-md-none">
+			<i class='fa fa-bars' aria-hidden='true' (click) = 'toggleDropdown()'></i>
+			<div class="dropdown-content" *ngIf = 'showDropdown'>
+				<ul class="navbar-ul list-unstyled">
+					<li class="navbar-li m-2 home"><a href="#" class="navbar-link text-white" routerLink="/''">Home</a></li>
+					<li class="navbar-li m-2 about"><a href="#" class="navbar-link text-white" routerLink="/">About</a></li> 
+					<li class="navbar-li m-2 knowledge-base"><a href="#" class="navbar-link text-white" routerLink="/">Knowledge Base</a></li>
+					<li class="navbar-li m-2 forum"><a href="#" class="navbar-link text-white" routerLink="/">Forum</a></li>
+					<li class="navbar-li m-2 e-farm"><a href="#" class="navbar-link text-white" routerLink="/">E-farm</a></li>
+					<li class="navbar-li m-2 contact"><a href="#" class="navbar-link text-white" routerLink="/">Contact</a></li>
+					<li class="navbar-li m-2 hausa"><a class="navbar-link text-white" (click) = 'toggleLang()'>Hausa<img src="././assets/images/caret-down.png" class="lang-dropdown rounded"></a>
+						<div class="dropdown-content1" *ngIf = 'showLang'>
+							<a class="d-block dropdown-content2 py-2" href="#">English</a>
+							<a class="d-block dropdown-content2 py-2" href="#">Hausa</a>
+							<a class="d-block dropdown-content2 py-2" href="#">Ibo</a>
+						</div>
+				</ul>
+			</div>
+		</div>
+	
+	</div>
+</div>
+
+<router-outlet></router-outlet>
+
+<!-- footer -->
+
+<footer class="footer pb-5">
+
+	<div class="footer-section row px-5">
+
+		<div class="nearby-info col-sm-6 col-lg px-3">
+			<img src="././assets/logos/Logo-2.png" alt="LOGO" srcset="" class="nearby-footer-logo mb-3">
+			<div class="address mb-4"><span class="hqrts"><i class="fa fa-map-marker" aria-hidden="true"></i>
+				 23,Aminu Galadima Way, Jimeta, Yola, Adamawa State, Nigeria</span></div>
+			<div class="phone-number mb-4"><span class="call-digits"><i class="fa fa-phone" aria-hidden="true"></i>
+				07033333333</span></div>
+			<div class="enquiry mb-4"><a href="#" class="enquiry-link"><span class="equiry-address"><i class="fa fa-envelope" aria-hidden="true"></i>
+				Enquiry@nearby.com</span></a></div>
+			<div class="social mb-4">
+				<ul class="social-ul list-unstyled">
+					<li class="social-icons d-inline-block pr-4 facebook"><a href="#" class="link-icons"><img src="././assets/images/icons8-facebook-24.png" alt="" srcset="" class="link-icon-img"></a></li>
+					<li class="social-icons d-inline-block pr-4 twitter"><a href="#" class="link-icons"><img src="././assets/images/icons8-twitter-24.png" alt="" srcset="" class="link-icon-img"></a></li>
+					<li class="social-icons d-inline-block pr-4 instagram"><a href="#" class="link-icons"><img src="././assets/images/icons8-instagram-32.png" alt="" srcset="" class="link-icon-img"></a></li>
+					<li class="social-icons d-inline-block pr-4 linked-in"><a href="#" class="link-icons"><img src="././assets/images/icons8-linkedin-24.png" alt="" srcset="" class="link-icon-img"></a></li>
+					<li class="social-icons d-inline-block pr-4 youtube"><a href="#" class="link-icons"><img src="././assets/images/icons8-youtube-32.png" alt="" srcset="" class="link-icon-img"></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="company col-sm-6 col-lg px-3 text-left">
+			<h6 class="company-heading footer-sub-heading font-weight-bold">Company</h6>
+			<div class="underline my-3"></div>
+			<a href="http://" class="home-link">
+				<p class="home mb-4">Home</p>
+			</a>
+			<a href="http://" class="about-us-link">
+				<p class="about-us mb-4">About Us</p>
+			</a>
+			<a href="http://" class="knowledge-base-link">
+				<p class="knowledge-base mb-4">Knowledge Base</p>
+			</a>
+			<a href="http://" class="contact-link">
+				<p class="contact mb-4">Contact</p>
+			</a>
+		</div>
+
+		<div class="community col-sm-6 col-lg px-3 text-left">
+			<h6 class="community-heading footer-sub-heading font-weight-bold">Community</h6>
+			<div class="underline my-3"></div>
+			<a href="http://" class="forum-link">
+				<p class="forum mb-4">Forum</p>
+			</a>
+			<a href="http://" class="e-farm-link">
+				<p class="e-farm mb-4">E-Farm</p>
+			</a>
+			<form action="" class="community-form mb-4 row">
+				<input type="search" name="" id="" placeholder="Type in here" class="community-search borderd-inline-block col-7">
+				<button type="submit" class="button-search"><i class="fa fa-search d-inline col-5"></i>Search</button>
+			</form>
+		</div>
+
+		<div class="download-app col-sm-6 col-lg px-3 text-left">
+			<h6 class="download-app-heading footer-sub-heading font-weight-bold">Download App</h6>
+			<div class="underline my-3"></div>
+			<div class="downlood-pics my-4">
+				<img src="././assets/images/Google Play.png" alt="" srcset="" class="google app">
+				<img src="././assets/images/App Store.png" alt="" srcset="" class="apple app">
+			</div>
+		</div>
+
+	</div>
+
+	<div class="policy py-2">
+		<p class="privacy-policy text-center text-white pb-2">Privacy Policy.Terms and Conditions</p>
+		<p class="policy-rights text-center text-white">Nearby Limited RC 1617189 c Copyright 2020, all rights reserved</p>
+	</div>
+
+</footer>
