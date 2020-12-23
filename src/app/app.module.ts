@@ -1,8 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
-import { ReactiveFormsModule } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
@@ -44,7 +43,7 @@ import { AddBusinessComponent } from './add-business/add-business.component';
 		AddProductComponent,
 		PublicProfileComponent,
 		SearchResultComponent,
-		AddBusinessComponent,
+		AddBusinessComponent
   ],
   imports: [
     BrowserModule,
