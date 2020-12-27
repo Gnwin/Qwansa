@@ -7,21 +7,37 @@
     <form action="" [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="loginForm">
       
       <div class="form-group">
+
         <label for="phone-number" class="loginLabel"></label>
-        <input (keypress)="keyPress($event)" type="text" formControlName="phonenumber" id="phone-number" class="form-control border d-block" placeholder="Phone Number" required [ngClass]="{ 'is-invalid': submitted && f.phonenumber.errors }">
+        <input (keypress)="keyPress($event)" 
+          type="text" 
+          formControlName="phonenumber" 
+          id="phone-number" 
+          class="form-control border d-block" 
+          placeholder="Phone Number" 
+          required 
+          [ngClass]="{ 'is-invalid': submitted && f.phonenumber.errors }">
         <div *ngIf="submitted && f.phonenumber.errors" class="invalid-feedback">
           <div *ngIf="f.phonenumber.errors.required">Phone number is required</div>
           <div *ngIf="f.phonenumber.errors.pattern || f.phonenumber.errors.maxlength || f.phonenumber.errors.minlength">Phone number must be at least 11 numbers</div>
         </div>
+        
       </div>
 
       <div class="form-group">
         <label for="password"></label>
-        <input type="password" formControlName="password" class="form-control border d-block" id="inputPassword1" placeholder="Password" required [ngClass]="{ 'is-invalid': submitted && f.password.errors }" >
+        <input 
+          type="password" 
+          formControlName="password" 
+          class="form-control border d-block" 
+          id="inputPassword1" 
+          placeholder="Password" required 
+          [ngClass]="{ 'is-invalid': submitted && f.password.errors }" >
+          
         <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
           <div *ngIf="f.password.errors.required">Password is required</div>
           <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
-      </div>
+        </div>
 
       </div>
 

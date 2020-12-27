@@ -14,7 +14,7 @@ export class loginComponent {
   submitted = false;
 	constructor(private formBuilder: FormBuilder) { }
 	
-  //only number will be add
+  //only number will be added
   keyPress(event: any) {
 		const pattern = /[0-9\+\-\ ]/;
 		

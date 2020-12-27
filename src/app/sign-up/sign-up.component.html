@@ -3,15 +3,29 @@
   <h2 class="signUpHeader">Ready to explore the unlimited opportunities in Agricultural sector?</h2>
   <div class="container content">
 
-    <form #form="ngForm" action="" class="signUpForm">
+    <form action="" [formGroup]="signUpForm" (ngSubmit)="onSubmit()" class="signUpForm">
 
       <div class="form-group">
+
         <label for="phone-number" class="signUpLabel">Sign up for free</label>
-        <input type="text" id="phone-number" class="form-control border d-block" placeholder="Phone Number">
+        <input (keypress)="keyPress($event)" 
+          type="text" 
+          formControlName="phonenumber" 
+          id="phone-number" 
+          class="form-control border d-block" 
+          placeholder="Phone Number" 
+          [ngClass]="{ 'is-invalid': submitted && f.phonenumber.errors }">
+        
+        <div *ngIf="submitted && f.phonenumber.errors" class="invalid-feedback">
+          <div *ngIf="f.phonenumber.errors.required">Phone number is required</div>
+          <div *ngIf="f.phonenumber.errors.pattern || f.phonenumber.errors.maxlength || f.phonenumber.errors.minlength">Phone number must be at least 11 numbers</div>
+        </div>
+
       </div>
 
       <div class="form-check-inline d-flex justify-content-between">
-        <button type="submit" class="nextFormBtn" routerLink="/token-validation">Next</button>
+        <button type="submit" class="nextFormBtn">Next</button>
+        <!-- routerLink="/token-validation" -->
         <a href="http://" rel="noopener noreferrer" class="signUpLink forgotPass" routerLink="/login">Already registered? Login here.</a>
       </div>
 
