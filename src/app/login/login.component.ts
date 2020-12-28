@@ -22,16 +22,26 @@ export class loginComponent {
     if (event.keyCode != 8 && !pattern.test(inputChar)) {
       event.preventDefault();
     }
-	}
+  }
+  
+ 
 	
   ngOnInit() {
+    var initialValue: number;
     this.loginForm = this.formBuilder.group({
        phonenumber: ['', [ Validators.required,
         Validators.pattern("^[0-9]*$"),
 				Validators.minLength(11), Validators.maxLength(11)]],
-				password: ['', [Validators.required, Validators.minLength(6)]]
+        password: ['', [Validators.required,
+                        Validators.minLength(6)
+                      ]]
     });
-	}
+  }
+  
+
+
+
+
 
 	// convenience getter for easy access to form fields
 	get f() { return this.loginForm.controls; }
