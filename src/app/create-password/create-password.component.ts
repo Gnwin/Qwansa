@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 
 // import custom validator to validate that password and confirm password fields match
-import { ConfirmedValidator } from './Validators/confirmedValidator';
+// import { ConfirmedValidator } from './Validators/confirmedValidator';
 
 
 @Component({
@@ -30,17 +30,17 @@ export class CreatePasswordComponent implements OnInit {
   // }
   
   ngOnInit() {
-    this.createNewForm = this.formBuilder.group({
-        createpassword: ['', [Validators.required, Validators.minLength(6),
-          Validators.pattern("(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&].{8,}")]],
+    // this.createNewForm = this.formBuilder.group({
+    //     createpassword: ['', [Validators.required, Validators.minLength(6),
+    //       Validators.pattern("(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&].{8,}")]],
           
-        confirmpassword: ['', [Validators.required,
-          Validators.pattern("(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&].{8,}")]]   
-                            //^(?=.*[A-Z])(?=.*[!@#\$%\^&\*])(?=.{9,} 
-                          }, { 
-                            validator: ConfirmedValidator('password', 'confirm_password')
+    //     confirmpassword: ['', [Validators.required,
+    //       Validators.pattern("(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&].{8,}")]]   
+    //                         //^(?=.*[A-Z])(?=.*[!@#\$%\^&\*])(?=.{9,} 
+    //                       }, { 
+    //                         validator: ConfirmedValidator('password', 'confirm_password')
        
-    });
+    // });
   }
 
 
